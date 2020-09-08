@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { apiUrl, appMode } from '../../environments/environment';
+import { apiUrl, errURL, infoURL, warnURL } from '../../environments/environment';
 import { BehaviorSubject, Observable, of, Subject } from 'rxjs';
 import { catchError, tap } from 'rxjs/operators';
 import { JwtResponse } from '../response/JwtResponse';
@@ -72,18 +72,15 @@ export class UserService {
     }
 
     logError(error: String): Observable<ErrorLogs> {
-        const url = "http://localhost:8080/err";
-        return this.http.post<ErrorLogs>(url, error);
+        return this.http.post<ErrorLogs>(errURL, error);
     }
 
     logWarning(warning: String): Observable<ErrorLogs> {
-        const url = "http://localhost:8080/warn";
-        return this.http.post<ErrorLogs>(url, warning);
+        return this.http.post<ErrorLogs>(warnURL, warning);
     }
 
     logInfo(info: String): Observable<ErrorLogs> {
-        const url = "http://localhost:8080/info";
-        return this.http.post<ErrorLogs>(url, info);
+        return this.http.post<ErrorLogs>(infoURL, info);
     }
 
     getPosition(): Promise<any> {

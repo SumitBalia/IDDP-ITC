@@ -7,6 +7,9 @@ export const environment = {
 };
 export const apiUrl = 'http://localhost:8080/api'; //'http://10.0.0.10:8082/api';
 export let appMode = ['INFO', 'DEBUG'];
+export let errURL = 'http://localhost:8080/err';
+export let warnURL = 'http://localhost:8080/warn';
+export let infoURL = 'http://localhost:8080/info';
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
