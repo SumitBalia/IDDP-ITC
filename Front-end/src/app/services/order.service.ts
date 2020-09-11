@@ -15,7 +15,7 @@ export class OrderService {
     constructor(private http: HttpClient) {
     }
 
-    getPage(page = 1, size = 10): Observable<any> {
+    getPage(page = 1, size = 5000): Observable<any> {
         return this.http.get(`${this.orderUrl}?page=${page}&size=${size}`).pipe();
     }
 

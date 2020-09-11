@@ -49,7 +49,7 @@ export class OrderComponent implements OnInit, OnDestroy {
             this.userService.logInfo("Order component update() start").subscribe(res => { });
         }
         let nextPage = 1;
-        let size = 10;
+        let size = 5000;
         if (this.route.snapshot.queryParamMap.get('page')) {
             nextPage = +this.route.snapshot.queryParamMap.get('page');
             size = +this.route.snapshot.queryParamMap.get('size');

@@ -63,7 +63,7 @@ export class CardComponent implements OnInit, OnDestroy {
       this.user.logInfo("Card component update() end").subscribe(res => { });
     }
   }
-  getProds(page: number = 1, size: number = 3) {
+  getProds(page: number = 1, size: number = 5000) {
     if(appMode.includes('DEBUG')){
       this.user.logInfo("Card component getProds() start").subscribe(res => { });
     }
