@@ -16,7 +16,6 @@ export class AppComponent implements OnInit{
     if(appMode.includes('DEBUG')){
       this.user.logInfo(JSON.stringify("App Init")).subscribe(res => { });
     }
-    this.example();
   }
   
 }

@@ -29,7 +29,7 @@ export class ErrorInterceptor implements HttpInterceptor {
       let comp = this.router.url.split('/')[1];
       let location = "";
 
-      let errorDetails = `loggingLevel: ${err.type ? err.type : "error"} | userName: ${this.name ? this.name : "-"} | businessComponent: ${comp ? comp : "App"} | browser: ${this.userService.getBrowserDetails()} | location: ${location !== "" ? `lat: ${location['lat']}, lng: ${location['lng']}` : ""} | message: ${err.message ? err.message : "message not available"} | exceptionStack: ${err.stack ? err.stack : "stack not available"}`;
+      let errorDetails = `${err.type ? err.type : "error"} | ${this.name ? this.name : "-"} | ${comp ? comp : "App"} | ${this.userService.getBrowserDetails()} | ${location !== "" ? `${location['lat']},${location['lng']}` : ""} | ${err.message ? err.message : "message not available"} | ${err.stack ? err.stack : "stack not available"}`;
 
       this.userService.logError(JSON.stringify(errorDetails)).subscribe(res => { });
 

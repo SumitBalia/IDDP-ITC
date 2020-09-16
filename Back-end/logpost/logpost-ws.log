@@ -1,47 +1,20 @@
-2020-09-04 10:51:57.773  INFO 15592 --- [main] c.logpost.service.DemoApplicationTests   : No active profile set, falling back to default profiles: default
-2020-09-04 10:51:59.588  WARN 15592 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2020-09-04 10:51:59.902  INFO 15592 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ad43e307-a445-3301-9751-8092ca2fd46c
-2020-09-04 10:52:00.850  WARN 15592 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2020-09-04 10:52:00.853  INFO 15592 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-09-04 10:52:00.870  WARN 15592 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2020-09-04 10:52:00.870  INFO 15592 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-09-04 10:52:02.243  INFO 15592 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-09-04 10:52:04.814  WARN 15592 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
-2020-09-04 10:52:04.956  INFO 15592 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2020-09-04 10:52:05.098  INFO 15592 --- [main] c.logpost.service.DemoApplicationTests   : Started DemoApplicationTests in 9.635 seconds (JVM running for 11.995)
-2020-09-04 10:52:06.298  INFO 15592 --- [SpringContextShutdownHook] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2020-09-04 10:52:06.307  INFO 15592 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application LOGPOST-WS with eureka with status DOWN
-2020-09-04 10:52:06.343  INFO 15592 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-09-04 16:15:03.476  INFO 14972 --- [main] c.logpost.service.DemoApplicationTests   : No active profile set, falling back to default profiles: default
-2020-09-04 16:15:08.914  WARN 14972 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2020-09-04 16:15:09.466  INFO 14972 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ad43e307-a445-3301-9751-8092ca2fd46c
-2020-09-04 16:15:11.261  WARN 14972 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2020-09-04 16:15:11.262  INFO 14972 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-09-04 16:15:11.300  WARN 14972 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2020-09-04 16:15:11.304  INFO 14972 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-09-04 16:15:13.370  INFO 14972 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-09-04 16:15:17.920  WARN 14972 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
-2020-09-04 16:15:18.240  INFO 14972 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2020-09-04 16:15:18.527  INFO 14972 --- [main] c.logpost.service.DemoApplicationTests   : Started DemoApplicationTests in 22.48 seconds (JVM running for 33.113)
-2020-09-04 16:15:23.845  INFO 14972 --- [SpringContextShutdownHook] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2020-09-04 16:15:23.853  INFO 14972 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application LOGPOST-WS with eureka with status DOWN
-2020-09-04 16:15:23.863  INFO 14972 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-09-04 16:29:08.354  INFO 6336 --- [main] c.logpost.service.DemoApplicationTests   : No active profile set, falling back to default profiles: default
-2020-09-04 16:29:11.265  WARN 6336 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2020-09-04 16:29:11.833  INFO 6336 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ad43e307-a445-3301-9751-8092ca2fd46c
-2020-09-04 16:29:13.253  WARN 6336 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2020-09-04 16:29:13.263  INFO 6336 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-09-04 16:29:13.279  WARN 6336 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2020-09-04 16:29:13.280  INFO 6336 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-09-04 16:29:15.347  INFO 6336 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-09-04 16:29:19.186  WARN 6336 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
-2020-09-04 16:29:19.493  INFO 6336 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2020-09-04 16:29:19.885  INFO 6336 --- [main] c.logpost.service.DemoApplicationTests   : Started DemoApplicationTests in 15.008 seconds (JVM running for 18.102)
-2020-09-04 16:29:21.815  INFO 6336 --- [SpringContextShutdownHook] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2020-09-04 16:29:21.831  INFO 6336 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application LOGPOST-WS with eureka with status DOWN
-2020-09-04 16:29:21.850  INFO 6336 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-09-04 16:39:01.179  INFO 2752 --- [main] c.logpost.service.DemoApplicationTests   : Starting DemoApplicationTests on mj with PID 2752 (started by sumit in C:\Users\sumit\Downloads\LogPost-master\LogPost-master\Service\logpost)
-2020-09-04 16:39:01.188  INFO 2752 --- [main] c.logpost.service.DemoApplicationTests   : No active profile set, falling back to default profiles: default
-2020-09-04 16:39:04.912  INFO 2752 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-09-04 16:39:05.801  INFO 2752 --- [main] c.logpost.service.DemoApplicationTests   : Started DemoApplicationTests in 5.505 seconds (JVM running for 8.335)
-2020-09-04 16:39:06.830  INFO 2752 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-16 16:21:57.202  INFO 14244 --- [main] c.logpost.service.DemoApplicationTests   : Starting DemoApplicationTests on mj with PID 14244 (started by sumit in C:\Users\sumit\Documents\IDDP-ITC\Back-end\logpost)
+2020-09-16 16:21:57.226  INFO 14244 --- [main] c.logpost.service.DemoApplicationTests   : No active profile set, falling back to default profiles: default
+2020-09-16 16:22:00.636  INFO 14244 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-16 16:22:01.298  INFO 14244 --- [main] c.logpost.service.DemoApplicationTests   : Started DemoApplicationTests in 5.623 seconds (JVM running for 10.269)
+2020-09-16 16:22:03.130  INFO 14244 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-16 16:29:41.929  INFO 1840 --- [main] c.logpost.service.DemoApplicationTests   : Starting DemoApplicationTests on mj with PID 1840 (started by sumit in C:\Users\sumit\Documents\IDDP-ITC\Back-end\logpost)
+2020-09-16 16:29:41.981  INFO 1840 --- [main] c.logpost.service.DemoApplicationTests   : No active profile set, falling back to default profiles: default
+2020-09-16 16:29:44.500  INFO 1840 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-16 16:29:45.007  INFO 1840 --- [main] c.logpost.service.DemoApplicationTests   : Started DemoApplicationTests in 3.913 seconds (JVM running for 5.913)
+2020-09-16 16:29:45.663  INFO 1840 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-16 16:37:18.130  INFO 14532 --- [main] c.logpost.service.DemoApplicationTests   : Starting DemoApplicationTests on mj with PID 14532 (started by sumit in C:\Users\sumit\Documents\IDDP-ITC\Back-end\logpost)
+2020-09-16 16:37:18.170  INFO 14532 --- [main] c.logpost.service.DemoApplicationTests   : No active profile set, falling back to default profiles: default
+2020-09-16 16:37:21.750  INFO 14532 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-16 16:37:22.337  INFO 14532 --- [main] c.logpost.service.DemoApplicationTests   : Started DemoApplicationTests in 5.326 seconds (JVM running for 8.517)
+2020-09-16 16:37:23.202  INFO 14532 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-16 17:37:22.289  INFO 11084 --- [main] c.logpost.service.DemoApplicationTests   : Starting DemoApplicationTests on mj with PID 11084 (started by sumit in C:\Users\sumit\Documents\IDDP-ITC\Back-end\logpost)
+2020-09-16 17:37:22.314  INFO 11084 --- [main] c.logpost.service.DemoApplicationTests   : No active profile set, falling back to default profiles: default
+2020-09-16 17:37:25.239  INFO 11084 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-16 17:37:25.756  INFO 11084 --- [main] c.logpost.service.DemoApplicationTests   : Started DemoApplicationTests in 4.682 seconds (JVM running for 7.511)
+2020-09-16 17:37:26.564  INFO 11084 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

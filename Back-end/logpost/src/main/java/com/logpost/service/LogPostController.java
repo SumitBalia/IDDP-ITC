@@ -47,7 +47,7 @@ public class LogPostController{
 	
 	@PostMapping(value = "/info", produces="text/plain")
 	public String logInfo(@RequestBody String message) {
-
+		message = message.replace("\"", "");
 		_logger.info(message);
 		return "";
 
@@ -60,7 +60,7 @@ public class LogPostController{
 	
 	@PostMapping(value = "/err", produces="text/plain")
 	public String logError(@RequestBody String message) {
-
+		message = message.replace("\"", "");
 		_logger.error(message);
 		return "";
 	}
@@ -71,7 +71,7 @@ public class LogPostController{
 	 */
 	@PostMapping(value="/warn", produces="text/plain")
 	public String logWarn(@RequestBody String message) {
-
+		message = message.replace("\"", "");
 		_logger.warn(message);
 		return "";
 	}
