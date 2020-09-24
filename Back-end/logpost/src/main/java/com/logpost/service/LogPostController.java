@@ -20,7 +20,7 @@ import org.slf4j.LoggerFactory;
  */
 @RestController
 @CrossOrigin(origins = "*")
-@RequestMapping(value="/")
+@RequestMapping(value="/log")
 
 public class LogPostController{
 

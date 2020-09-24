@@ -152,15 +152,22 @@ export class CartComponent implements OnInit, OnDestroy, AfterContentChecked {
         }
     }
 
-    checkout() {
+    checkout(productInOrders) {
         if (appMode.includes('DEBUG')) {
             this.userService.logInfo("Cart component checkout() start").subscribe(res => { });
         }
+        
         if (!this.currentUser) {
             this.router.navigate(['/login'], { queryParams: { returnUrl: this.router.url } });
         } else if (this.currentUser.role !== Role.Customer) {
             this.router.navigate(['/seller']);
         } else {
+            productInOrders.forEach(element => {
+                if(element.productStock == 1){
+                    alert(element.productName + ' is less in stock');
+                    this.userService.logInfo("Cart component checkout() fail stock is less").subscribe(res => { });
+                }
+            });
             this.cartService.checkout().subscribe(
                 _ => {
                     this.productInOrders = [];

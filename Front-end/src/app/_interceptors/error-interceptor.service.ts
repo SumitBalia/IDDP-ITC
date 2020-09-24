@@ -25,13 +25,13 @@ export class ErrorInterceptor implements HttpInterceptor {
         this.router.navigate(['/login']);
       }
 
-      this.name$ = this.userService.name$.subscribe(aName => this.name = aName);
-      let comp = this.router.url.split('/')[1];
-      let location = "";
+      // this.name$ = this.userService.name$.subscribe(aName => this.name = aName);
+      // let comp = this.router.url.split('/')[1];
+      // let location = "";
 
-      let errorDetails = `${err.type ? err.type : "error"} | ${this.name ? this.name : "-"} | ${comp ? comp : "App"} | ${this.userService.getBrowserDetails()} | ${location !== "" ? `${location['lat']},${location['lng']}` : ""} | ${err.message ? err.message : "message not available"} | ${err.stack ? err.stack : "stack not available"}`;
+      // let errorDetails = `${err.type ? err.type : "error"} | ${this.name ? this.name : "-"} | ${comp ? comp : "App"} | ${this.userService.getBrowserDetails()} | ${location !== "" ? `${location['lat']},${location['lng']}` : ""} | ${err.message ? err.message : "message not available"} | ${err.stack ? err.stack : "stack not available"}`;
 
-      this.userService.logError(JSON.stringify(errorDetails)).subscribe(res => { });
+      // this.userService.logError(JSON.stringify(errorDetails)).subscribe(res => { });
 
       const error = err.error || err.statusText;
       return throwError(error);
