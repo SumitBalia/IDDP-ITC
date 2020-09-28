@@ -39,7 +39,7 @@ export class ErrorService implements ErrorHandler {
     //   "exceptionStack": error.stack ? error.stack : "stack not available"
     // };
     //let errorDetails = `loggingLevel: ${error.type ? error.type : "error"} | userName: ${this.name ? this.name : "-"} | businessComponent: ${comp ? comp : "App"} | browser: ${this.user.getBrowserDetails()} | location: ${location !== "" ? `lat: ${location['lat']}, lng: ${location['lng']}` : ""} | message: ${error.message ? error.message : "message not available"} | exceptionStack: ${error.stack ? error.stack : "stack not available"}`;
-    let errorDetails = `${error.type ? error.type : "error"} | ${this.name ? this.name : "-"} | ${comp ? comp : "App"} | ${this.user.getBrowserDetails()} | ${location !== "" ? `${location['lat']}, ${location['lng']}` : ""} | ${error.message ? error.message : "message not available"} | ${error.stack ? error.stack : "stack not available"}`;
+    let errorDetails = `ErrorType=${error.type ? error.type : "error"} | UserName=${this.name ? this.name : "User not logged in"} | ComponentName=${comp ? comp : "App"} | Browser=${this.user.getBrowserDetails()} | ErrorMessage=${error.message ? error.message : "message not available"} | ErrorStack=${error.stack ? error.stack : "stack not available"}`;
 
     this.user.logError(JSON.stringify(errorDetails)).subscribe(res => { });
 
